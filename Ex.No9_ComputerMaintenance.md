@@ -42,8 +42,9 @@ problem(blank_display).
 ```
 ### Output:
 
-![alt](./Output-Screenshots/ex-06-1.png)
-![alt](./Output-Screenshots/ex-06-2.png)
+![image](https://github.com/user-attachments/assets/bee075c6-de9c-4dee-be6b-05e97146244e)
+
+![image](https://github.com/user-attachments/assets/02d53fff-2a7b-4010-bb79-7f752ae0663e)
 
 ### Result:
 Thus the simple omputer maintenance expert system was built sucessfully.
