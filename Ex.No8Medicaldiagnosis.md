@@ -51,7 +51,7 @@ symptom(raju,sore_throat).
 
 ### Output:
 
-![alt](./Output-Screenshots/med.png)
+![image](https://github.com/user-attachments/assets/b2f663d9-3038-4403-8a73-351e478d68b1)
 
 ### Result:
 Thus the simple medical diagnosis system was built sucessfully.
