@@ -1,6 +1,6 @@
 # Ex.No: 10  Logic Programming –  Simple queries from facts and rules
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE: 26/09/2024                                                                           
+### REGISTER NUMBER : 212222040006
 ### AIM: 
 To write a prolog program to find the answer of query. 
 ###  Algorithm:
@@ -11,6 +11,7 @@ To write a prolog program to find the answer of query.
  Step 5:  Pass the query to program. <br> 
  Step 6: Prolog interpreter shows the output and return answer. <br> 
  Step 8:  Stop the program.
+### Program:
 ### Task 1:
 Construct the FOL representation for the following sentences <br> 
 1.	John likes all kinds of food.  <br> 
@@ -33,11 +34,9 @@ food(chicken).
 food(peanuts).
 ```
 
-
-
 ### Output:
 
-<img width="477" alt="image" src="https://github.com/user-attachments/assets/fb0dd907-1fb0-4132-a9f1-ebef3038ae2a">
+![image](https://github.com/Mena-Rossini/AI_Lab_2023-24/assets/102855266/aa9e4ec8-9481-4f69-9d95-997d6c1f0d27)
 
 
 ### Task 2:
@@ -58,19 +57,39 @@ easycourse(X):-
 course(bk301,dept(havefun)).
 ```
 
-
 ### Output:
 
-
+![image](https://github.com/Mena-Rossini/AI_Lab_2023-24/assets/102855266/4bcbb149-8176-4837-94ba-b31da9e63479)
 
 ### Task 3:
 Consider the statement <br> 
 “This is a crime for an American to sell weapons to hostile nations. The Nano , enemy of America has some missiles and its missiles were sold it by Colonal West who is an American” <br> 
 Convert to Clause form and prove west is criminal by using Prolog.<br> 
 ### Program:
+```
+criminal(X):-
+ american(X),
+ weapon(Y),
+ hostile(Z),
+ sells(X,Y,Z).
+weapon(Y):-
+ missile(Y).
+hostile(Z):-
+ enemy(Z,X).
+sells(west,Y,nano):-
+ missile(Y),
+ owns(nano,Y).
+missile(m).
+owns(nano,m).
+enemy(nano,america).
+american(west). 
 
+```
 
 ### Output:
+
+![image](https://github.com/Mena-Rossini/AI_Lab_2023-24/assets/102855266/dbb5a88f-3abe-4a4c-bdb9-25004dc168fb)
+
 
 ### Result:
 Thus the prolog programs were executed successfully and the answer of query was found.
